@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=VT323&display=swap');
+:root{
+    --text-color:green;
+    --back-color:black;
+    --highlight-color:yellow;
+    --sephia:60%;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'VT323', monospace;
+}
+.terminal-container{
+    width:100%;
+    min-height: 100vh;
+    max-height: max-content;
+    background-color: var(--back-color);
+    padding: 10%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terminal-tab{
+    width:100%;
+    height:40px;
+
+    display: flex;
+    align-items: center;
+
+}
+.outer{
+    border:1px solid var(--text-color);
+    width:200px;
+    height:max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.w3-grey{
+    background-color: var(--highlight-color) !important;
+}
+.progress{
+    display:flex;
+    align-items: center;
+    padding:5px;
+    font-weight: bolder;
+    color:var(--text-color) !important;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+.command-current{
+    color:var(--text-color);
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
+.command-input{
+    width:auto;
+    max-width: 250px;
+    background-color: transparent;
+    outline: none;
+    border-right:10px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    caret-color: none;
+    animation: cursorBlink 0.3s steps(2) infinite;
+
+    display:flex;
+    align-items: center;
+
+}
+.intro{
+    display:flex;
+    align-items: flex=start;
+    justify-content:space-between;
+    width:100%;
+    border: 1px solid red;
+}
+.avatar{
+    width:350px;
+    height:250px;
+    object-fit: cover;
+    border: 5px dotted var(--text-color);
+    object-position: center;
+}
+
+.rightIntro{
+    width:auto;
+    padding:50px;
+    border: 1px solid red;
+}
+
+.nameStyle
+{
+  
+}
+
+pre{
+    color:var(--text-color);
+    transform: scale(0.5);
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    background-color:var(--back-color);
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:var(--text-color);
+}
+
+.terminal-results{
+    width:100%;
+    height:auto;
+    font-size: 1.5rem;
+}
+
+.desc{
+
+    overflow: hidden;
+    width:0;
+    white-space: nowrap;
+    color: var(--text-color);
+    animation:typingEffect 2s steps(30,end) forwards;
+
+}
+
+strong{
+    color:var(--highlight-color);
+}
+ul{
+    margin-top:5px;
+    width:80%;    
+    height:auto;
+}
+
+ul li{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    overflow: hidden;
+    width:0;
+    white-space: nowrap;
+    color:var(--text-color);
+    animation:typingEffect 2s steps(30,end) forwards;
+
+  
+}
+
+
+@keyframes typingEffect {
+    0%{
+        width:0%;
+    }
+    30%{
+        border-right: 0px;
+    }
+    100%{
+        width:100%;
+        height: max-content;
+        border-right: 0px;
+        word-wrap: break-word;
+        white-space: normal;
+
+   
+    }
+}
+@keyframes cursorBlink {
+ 
+    100%{
+        border:0px;
+    }
+}
+
+@media  screen and (max-width:890px) {
+    ul{
+        width:100%;
+        padding:10px;
+        margin-left:0px;
+    }
+}
+@media screen and (max-width:500px){
+    .avatar{
+        height:200px;
+        width:150px;
+        float:right;
+        margin: 0px 0px 15px 20px;
+    }
+    .intro{
+        display:block;
+    }
+    .other{
+        display:none;
+    }
+    ul{
+        width:100%;
+    }
+    li{
+        width:100%;
+    }
+
+}
+
+.help
+{
+    width:auto;
+    padding-left: 10%;
+}
+
+.figlet
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.figlet img{
+    width: 100px;
+    height: 100px;
+}
