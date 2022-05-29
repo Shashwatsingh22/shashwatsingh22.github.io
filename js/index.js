@@ -4,7 +4,8 @@ let root=document.querySelector(":root");
 
 var commandInput=document.querySelectorAll(".command-input");
 let focusIndex=0;
-let content=`
+let about=`
+<div class='shift'>
 <p class="desc intro" >
 <span class="rightIntro">
                  Hi I'm
@@ -14,69 +15,76 @@ let content=`
                  
             </span>
             </p>
-<div class="help"> 
+</div>`;
 
-
-
+let help=`
+<div class="help shift"> 
 <br>
 <p class="desc"><strong>Usage:</strong></p>
 <br>
 
 
 <ul>
+<li>
+<strong>about </strong>
+&nbsp;
+About Me (A short Summery) ✌
+</li>
+
    <li>
        <strong>help </strong>
        &nbsp;
-       Know about further commands
+       Know about further commands 🆘
    </li>
 
    <li>
        <strong>clear </strong>
        &nbsp;
-       To clear terminal
+       To clear terminal 🚮
    </li>
 
    <li>
        <strong>skills  </strong>
        &nbsp;
-       My Skills
+       My Skills ⛑
    </li>
 
    <li>
        <strong>contact  </strong>
        &nbsp;
-       To Contact me
+       To Contact me 📞
    </li>
    <li>
        <strong>projects  </strong>
        &nbsp;
-       My Projects
+       My Projects 👩‍💻
    </li>
    <li>
        <strong>blogs  </strong>
        &nbsp;
-       Overview of  Blogs
+       Overview of  Blogs 📝
    </li>
 
    <li>
        <strong>theme -light  </strong>
        &nbsp;
-       Update Light Theme
+       Update Light Theme 💡
    </li>
 
    <li>
        <strong>theme -dark  </strong>
        &nbsp;
-       Update Dark Theme (default)
+       Update Dark Theme (default) 🌑
    </li>
 </ul>
 </div>
-`
+</div>
+`;
 function automate(index){
-    commandInput[index].innerText="help";
+    commandInput[index].innerText="about";
 
    
-    addContent(content)
+    addContent(about)
     addInputTab()
     commandInput[focusIndex].style.animation="none";
     commandInput[focusIndex].style.border="none";
@@ -143,25 +151,20 @@ function addInputTab(){
 
     main.innerHTML=`
         <p class="command-current">
-        shashwat@ip-127-0-0-1:~$ 
+        shashwat@ip-127-0-0-1:~$&nbsp; 
         </p>
         <p class="command-input"  contenteditable="true"></p>
         `;
     terminalContainer.appendChild(main);
-
-
 }
 
 function updateChanges(){
-
     commandInput[focusIndex-1].style.animation="none";
     commandInput[focusIndex-1].style.border="none";
     commandInput[focusIndex-1].setAttribute("contenteditable","false")
     commandInput=document.querySelectorAll(".command-input");
     commandInput[focusIndex].focus();
     listenCommands()
-
-
 }
 
 function clearHistory(){
@@ -182,10 +185,17 @@ function listenCommands(){
                console.log(statement)
                switch(statement){
 
+                    case "about":
+
+                       addContent(about)
+                       addInputTab()
+                       updateChanges()
+                       break;
+
 
                     case "help":
                       
-                       addContent(content)
+                       addContent(help)
                        addInputTab()
                        updateChanges()
                        break;
@@ -197,7 +207,7 @@ function listenCommands(){
 
 
                     case "skills":
-                        let content3=`<p class="desc">
+                        let content3=`<p class="desc shift">
                         <ul>
                             <li>
                                 <strong>Devops </strong>
@@ -248,7 +258,9 @@ function listenCommands(){
                         updateChanges();
                         break;
                     case "contact":
-                        let content4=`<p class="desc">
+                        let content4=`
+                        <div class="shift">
+                        <p class="desc">
                             <ul>
                                 <li>
                                     <strong><i class="fa fa-github"></i>&nbsp;Github</strong>
@@ -277,7 +289,7 @@ function listenCommands(){
                                     </a>
                                 </li>
                             </ul>
-                        </p>`
+                        </p></div>`
                         addContent(content4)
                         addInputTab()
                         updateChanges()
@@ -285,7 +297,7 @@ function listenCommands(){
 
                     case "blogs":
                         let content6=`
-                        <p class="desc" >
+                        <p class="desc shift" >
 
                             <ul>
                                 
@@ -347,16 +359,6 @@ function listenCommands(){
 
                                     <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar other"   alt="projectImg">
                                 </li>
-
-
-
-
-
-
-
-
-
-
                             </ul>
                         </p>`
                         addContent(content6)
@@ -380,7 +382,7 @@ function listenCommands(){
 
 
                     case "projects":
-                        let content5=`<p class="desc">
+                        let content5=`<div class="desc shift">
                           <ul>
 
                             <li >
@@ -396,12 +398,9 @@ function listenCommands(){
 
                                 <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar"   alt="projectImg">
                             </li>
-                            
-                  
-
 
                           </ul>
-                        </p>`
+                        </div>`
                         addContent(content5)
                         addInputTab()
                         updateChanges()
@@ -409,7 +408,7 @@ function listenCommands(){
 
 
                    default:
-                        let content2=`<p class="desc" style="color:red">
+                        let content2=`<p class="desc shift" style="color:red">
                             Command '${statement}' not found, 
                             Try <strong>help</strong> command
                         </p>`
