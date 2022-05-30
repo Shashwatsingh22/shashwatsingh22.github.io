@@ -12,7 +12,13 @@ let about=`
                  <strong> Shashwat </strong>
                  a passionate self-taught Backend Devloper as well as Devops  Engineer  from India.
                  My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.
-                 
+                 <br><br>
+                 I have created some projects might be you like so type <strong> 'projects' </strong> where I used both concept of Backend Skills as well as DevOps skills through which I tried solve some usecases of Industry.
+                 <br><br>
+                 I also loved to write blogs Whenever I learn new Technology I write blogs about that particular technology. It helps me in two ways, Firstly
+                 through these blogs I can share my thoughts on these Technologies and it also helps in networking with people of
+                 that particular field. On the Other hand, these blogs also
+                 helps me in form of notes. Wants to know more about it type <strong> 'blog' </strong>.
             </span>
             </p>
 </div>`;
@@ -142,7 +148,6 @@ function addContent(content){
     main.innerHTML=content;
 
     terminalContainer.appendChild(main);
-
 }
 
 function addInputTab(){
@@ -207,10 +212,14 @@ function listenCommands(){
 
 
                     case "skills":
-                        let content3=`<p class="desc shift">
+                        let content3=`<div class="shift">
+                        <p class="desc">
+                        <h4 class="hSkills"> Programming Languages </h5>
+                        
+                        <div class="shift">
                         <ul>
                             <li>
-                                <strong>Devops </strong>
+                                <strong>C and C++</strong>
                                 &nbsp;
 
                                 <div class="outer">
@@ -221,8 +230,21 @@ function listenCommands(){
                                 </div>
                            
                             </li>
+
                             <li>
-                                <strong>Laravel </strong>
+                                <strong>Data Structure And Algorithm (with C and C++)</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:75%">
+                                    75%
+                                    </div>
+                                </div>
+                           
+                            </li>
+                            <li>
+                                <strong>JavaScript</strong>
                                 &nbsp;
 
                                 <div class="outer">
@@ -235,68 +257,284 @@ function listenCommands(){
                             </li>
 
                             <li>
-                                <strong>Php </strong>
+                                <strong>Python</strong>
                                 &nbsp;
 
                                 <div class="outer">
 
-                                    <div class="w3-grey progress" style="height:24px;width:90%">
-                                    90%
+                                    <div class="w3-grey progress" style="height:24px;width:70%">
+                                    70%
                                     </div>
                                 </div>
                            
                             </li>
 
- 
+                            <li>
+                                <strong>PHP</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:60%">
+                                    60%
+                                    </div>
+                                </div>
+                           
+                            </li>
                             </li>
                         </ul>
-                        </p>`
+                        </div>
+
+                        </p>
+
+
+
+                        <p class="desc">
+                        <h4 class="hSkills"> DevOps Tools </h4>
+
+                        <div class="shift">
+                        <ul>
+                        <h5 class="subSkill"> Container Tools </h5>
+                            <li>
+                            
+                                <strong>Docker</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:70%">
+                                    70%
+                                    </div>
+                                </div>
+                           
+                            </li>
+                            <li>
+                                <strong>Podman</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:65%">
+                                    65%
+                                    </div>
+                                </div>
+                           
+                            </li>
+                        </ul>
+
+                        <ul>
+                        <h5 class="subSkill"> Container Management Tools (Orchestration) </h5>
+                            
+                            <li>
+                                <strong>Kubernetes</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:75%">
+                                    75%
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Openshift</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:45%">
+                                    45%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul>
+                        <h5 class="subSkill"> Configuraion Tool </h5>
+                            
+                            <li>
+                                <strong>Ansible</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:70%">
+                                    70%
+                                    </div>
+                                </div>
+                           
+                            </li>
+                        </ul>
+
+                        <ul>
+                        <h5 class="subSkill"> Continuous Integration & Continuous Deployment Tools </h5>
+                            <li>
+                            
+                                <strong>Jenkins</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:60%">
+                                    70%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul>
+                        <h5 class="subSkill"> Infrastructure As Code Tool </h5>
+                            <li>
+                                <strong>Terraform</strong>
+                                &nbsp;
+                                <div class="outer">
+                                    <div class="w3-grey progress" style="height:24px;width:60%">
+                                    60%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <ul>
+                        <h5 class="subSkill">Source Code Management Tool</h5>
+                            <li>
+                                <strong>Git & Github</strong>
+                                &nbsp;
+                                <div class="outer">
+                                    <div class="w3-grey progress" style="height:24px;width:75%">
+                                    75%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        </p>
+
+                        <p class="desc">
+                        <h4 class="hSkills"> Cloud Computing </h5>
+                        <div class="shift">
+                        <ul>
+                            <li>
+                                <strong>Amazon Web Services</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:55%">
+                                    55%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        </p>
+
+                        <p class="desc">
+                        <h4 class="hSkills"> Web Technology </h5>
+                        <div class="shift">
+                        <ul><h5 class="subSkill">Application Programming Interface (API)</h5>
+                            <li>
+                                <strong>NodeJS</strong>
+                                &nbsp;
+                                <div class="outer">
+                                    <div class="w3-grey progress" style="height:24px;width:75%">
+                                    75%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul><h5 class="subSkill">Model View Controller (MVC)</h5>
+                            <li>
+                                <strong>NodeJS</strong>
+                                &nbsp;
+                                <div class="outer">
+                                    <div class="w3-grey progress" style="height:24px;width:65%">
+                                    65%
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <strong>Laravel</strong>
+                                &nbsp;
+                                <div class="outer">
+                                    <div class="w3-grey progress" style="height:24px;width:60%">
+                                    60%
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        </div>
+                        </p>
+
+                        <p class="desc">
+                        <h4 class="hSkills"> Mobile App Devlopment </h5>
+                        <div class="shift">
+                        <ul>
+                            <li>
+                                <strong>Flutter</strong>
+                                &nbsp;
+
+                                <div class="outer">
+
+                                    <div class="w3-grey progress" style="height:24px;width:60%">
+                                    60%
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        </p>
+
+                        </div>`
     
                             
                         addContent(content3);
                         addInputTab();
                         updateChanges();
                         break;
+
                     case "contact":
-                        let content4=`
+                        let contact=`
                         <div class="shift">
                         <p class="desc">
                             <ul>
                                 <li>
-                                    <strong><i class="fa fa-github"></i>&nbsp;Github</strong>
-                                    <a href="https://github.com/Shashwatsingh22">
-                                    https://github.com/Shashwatsingh22
+                                    <strong><i class="fa fa-envelope"></i>&nbsp;Mail ID</strong>
+                                    <a href="mailto:shashwatsingh71@gmail.com">
+                                    shashwatsingh71@gmail.com
                                     </a>
                                 </li>
 
                                 <li>
-                                    <strong><i class="fa fa-facebook"></i>&nbsp;Facebook</strong>
-                                    <a href="https://github.com/Shashwatsingh22">
-                                    https://github.com/Shashwatsingh22
-                                    </a>
-                                </li>
-                                <li>
-                                    <strong><i class="fa fa-stack-overflow"></i>&nbsp;Stackoverflow</strong>
-                                    <a href="https://github.com/Shashwatsingh22">
-                                    https://github.com/Shashwatsingh22
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <strong><i class="fa fa-medium"></i>&nbsp;Medium</strong>
-                                    <a href="https://github.com/Shashwatsingh22">
-                                    https://github.com/Shashwatsingh22
+                                    <strong><i class="fa fa-linkedin"></i>&nbsp;Linkedin</strong>
+                                    <a href="https://www.linkedin.com/in/shashwatsing/">
+                                    linkedin/shashwatsingh
                                     </a>
                                 </li>
                             </ul>
                         </p></div>`
-                        addContent(content4)
+                        addContent(contact)
                         addInputTab()
                         updateChanges()
                         break;
 
                     case "blogs":
-                        let content6=`
+                        let flagsWithBlog=`
+                        <p class="desc shift">
+                        usage : blog [--flags] <br>
+                        --new For New Blogs <br>
+                        --most-like For Most Like Blogs<br>
+                        </p>
+                        `;
+                        addContent(flagsWithBlog)
+                        addInputTab()
+                        updateChanges()
+                        break;
+                    
+                    case "blogs --new":
+                        
+                        let blogNew=`
                         <p class="desc shift" >
 
                             <ul>
@@ -361,11 +599,12 @@ function listenCommands(){
                                 </li>
                             </ul>
                         </p>`
-                        addContent(content6)
+                        addContent(blogNew)
                         addInputTab()
                         updateChanges()
                         break;
-                        
+
+                    
                     case "theme -light":
                         setTheme("black","lightgray","blue");
                         sessionTheme("black","lightgray","blue");
