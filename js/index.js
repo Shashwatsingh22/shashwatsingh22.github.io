@@ -6,8 +6,8 @@ var commandInput=document.querySelectorAll(".command-input");
 let focusIndex=0;
 let about=`
 <div class='shift'>
-<p class="desc intro" >
-<span class="rightIntro">
+<p class="desc " >
+
                  Hi I'm
                  <strong> Shashwat </strong>
                  a passionate self-taught Backend Devloper as well as Devops  Engineer  from India.
@@ -19,7 +19,7 @@ let about=`
                  through these blogs I can share my thoughts on these Technologies and it also helps in networking with people of
                  that particular field. On the Other hand, these blogs also
                  helps me in form of notes. Wants to know more about it type <strong> 'blog' </strong>.
-            </span>
+        
             </p>
 </div>`;
 

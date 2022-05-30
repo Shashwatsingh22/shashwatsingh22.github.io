@@ -24,7 +24,6 @@ html{
 {
     width: 100%;
     height:max-content;
-    height:max-content;
 
     display:flex;
     align-items:center;
@@ -39,12 +38,11 @@ html{
     border: 2%;
 }
 .fig{    
-    width:auto;
-    height:auto;
-    display: flex;
+    width:80vw;
+    height:350px;
     justify-content:flex-start;
-    /* border:1px solid red; */
-    /* overflow: scroll; */
+    overflow: scroll;
+    
 }
 pre{
     color:var(--text-color);
@@ -60,17 +58,18 @@ pre{
 
 .terminal-container{
     width:100%;
+    height:auto;
     min-height: 100vh;
     max-height: max-content;
     background-color: var(--back-color);
-    padding:10px;
+    padding:50px;
     display:flex;
     flex-direction: column;
     align-items: center;
 
-    padding-right: 10%;
+    /* padding-right: 10%;
     padding-left: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 10%; */
 }
 
 .subSkill{
@@ -148,7 +147,7 @@ pre{
 }
 .rightIntro{
     width:auto;
-    padding:5px;
+    /* padding:5px; */
 }
 ::-webkit-scrollbar{
     width:10px;
@@ -188,6 +187,7 @@ pre{
 .shift
 {
     padding: 2%;
+    width:95vw;
 }
 
 strong{
@@ -212,7 +212,9 @@ ul li{
   
 }
 
-
+.fig::-webkit-scrollbar{
+    display:none;
+}
 @keyframes typingEffect {
     0%{
         width:0%;
@@ -250,6 +252,7 @@ ul li{
         width:150px;
         float:right;
         margin: 0px 0px 15px 20px;
+        border-radius: 10px;
     }
     .intro{
         display:block;
@@ -263,5 +266,31 @@ ul li{
     li{
         width:100%;
     }
+    .meriDetails{
+        flex-direction: column;
 
+    }
+    .meriDetails img{
+        width:100%;
+        height:250px;
+        background-position: top;
+    }
+    .fig pre{
+        width:100%;
+        height:250px;
+    }
+  
+    .desc{
+        font-size:1rem;
+    }
+    .command-current,.command-input{
+        font-size:1rem;
+    }
+
+    .terminal-container{
+        padding:0px;
+    }
+    .terminal-results{
+        font-size: inherit;
+    }
 }
