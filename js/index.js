@@ -542,60 +542,62 @@ function listenCommands(){
                                 <h1><strong>Trending Blogs</strong></h1>
                                 <li >
                                     <div class="column">
-                                        <strong>Blog Name </strong>
-                                        <small><i>Start Date to End Date</i></small>
+                                        <strong>Kubernetes Multi-Tenancy Approach</strong>
+                                        <small><i>June 20-2022</i></small>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas accusamus harum ut consequatur nulla dicta est eveniet, ex odio.        
+                                        A multi-tenant cluster is shared by multiple users and/or workloads which are referred to as “tenants”. The operators of multi-tenant clusters must isolate tenants from each other to minimize the damage that a compromised or malicious tenant can do to the cluster and other tenants. Also, cluster resources must be fairly allocated among tenants. 
                                         </p>    
 
-                                        <a href="" >https://github.com/Shashwatsingh22/LogManager</a>
+                                        <a href="https://towardsaws.com/kubernetes-multi-tenancy-approach-b0f58d615971" >Link 🔗</a>
                                     </div>
 
-                                    <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar other"   alt="projectImg">
+                                    <img src="https://miro.medium.com/max/1400/1*EBZe2IQEMN4GRJ8E3zQMyg.png" style="width:200px;height:200px;" class="avatar other"   alt="K8s-multi">
                                 </li>
 
                                 <li >
                                     <div class="column">
-                                        <strong>Blog Name </strong>
-                                        <small><i>Start Date to End Date</i></small>
+                                        <strong>Devtron: Complete Package Of Kubernetes Solutions</strong>
+                                        <small><i>July 6-2022</i></small>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas accusamus harum ut consequatur nulla dicta est eveniet, ex odio.        
-                                        </p>    
+                                       <strong>Lets me first discuss about the flow of this blog </strong>
+We start from the disscusion of types of architectures then we will start introducing the tools like why we required this tools at this step.
+Then when we comes to Devtron part configure the Devtron then we will Deploy an NodeJS application so that we can able to see that How Devtron makes our work easier.</p>    
 
-                                        <a href="" >https://github.com/Shashwatsingh22/LogManager</a>
+                                        <a href="https://towardsaws.com/devtron-complete-package-of-kubernetes-solutions-6c4fe1ffa42c" >Link 🔗</a>
                                     </div>
 
-                                    <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar other"   alt="projectImg">
+                                    <img src="https://miro.medium.com/max/800/1*j8tDeHNAOvKhQFWiAS-zIw.png" style="width:200px;height:200px;" class="avatar other"   alt="devtron">
                                 </li>
 
 
                                 <h1><strong>Recent Blogs</strong></h1>
                                 <li >
                                     <div class="column">
-                                        <strong>Blog Name </strong>
-                                        <small><i>Start Date to End Date</i></small>
+                                        <strong>Kubernetes Multi-Tenancy Approach</strong>
+                                        <small><i>June 20-2022</i></small>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas accusamus harum ut consequatur nulla dicta est eveniet, ex odio.        
+                                        A multi-tenant cluster is shared by multiple users and/or workloads which are referred to as “tenants”. The operators of multi-tenant clusters must isolate tenants from each other to minimize the damage that a compromised or malicious tenant can do to the cluster and other tenants. Also, cluster resources must be fairly allocated among tenants. 
                                         </p>    
 
-                                        <a href="" >https://github.com/Shashwatsingh22/LogManager</a>
+                                        <a href="https://towardsaws.com/kubernetes-multi-tenancy-approach-b0f58d615971" >Link 🔗</a>
                                     </div>
 
-                                    <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar other"   alt="projectImg">
+                                    <img src="https://miro.medium.com/max/1400/1*EBZe2IQEMN4GRJ8E3zQMyg.png" style="width:200px;height:200px;" class="avatar other"   alt="K8s-multi">
                                 </li>
 
                                 <li >
                                     <div class="column">
-                                        <strong>Blog Name </strong>
-                                        <small><i>Start Date to End Date</i></small>
+                                        <strong>Devtron: Complete Package Of Kubernetes Solutions</strong>
+                                        <small><i>July 6-2022</i></small>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas accusamus harum ut consequatur nulla dicta est eveniet, ex odio.        
-                                        </p>    
+                                       <strong>Lets me first discuss about the flow of this blog </strong>
+We start from the disscusion of types of architectures then we will start introducing the tools like why we required this tools at this step.
+Then when we comes to Devtron part configure the Devtron then we will Deploy an NodeJS application so that we can able to see that How Devtron makes our work easier.</p>    
 
-                                        <a href="" >https://github.com/Shashwatsingh22/LogManager</a>
+                                        <a href="https://towardsaws.com/devtron-complete-package-of-kubernetes-solutions-6c4fe1ffa42c" >Link 🔗</a>
                                     </div>
 
-                                    <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar other"   alt="projectImg">
+                                    <img src="https://miro.medium.com/max/800/1*j8tDeHNAOvKhQFWiAS-zIw.png" style="width:200px;height:200px;" class="avatar other"   alt="devtron">
                                 </li>
                             </ul>
                         </p>`
@@ -626,17 +628,31 @@ function listenCommands(){
 
                             <li >
                                 <div class="column">
-                                    <strong>Project Name </strong>
-                                    <small><i>Start Date to End Date</i></small>
+                                    <strong>LogManager 💻</strong>
+                                    <small><i>9-April-2022 to Still-Working</i></small>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas accusamus harum ut consequatur nulla dicta est eveniet, ex odio.        
+                                    Manage Projects and Give Access to the Developer who are able to view there logs of the projects either running on prod or Dev Env , through which they are able to resolve the issue or errors or bugs. 
                                     </p>    
 
-                                    <a href="" >https://github.com/Shashwatsingh22/LogManager</a>
+                                    <a href="https://github.com/Shashwatsingh22/LogManager" >Project Link 🔗</a>
                                 </div>
 
-                                <img src="avatar.jpeg" style="width:200px;height:200px;" class="avatar"   alt="projectImg">
+                                <img src="https://camo.githubusercontent.com/d89120e7aa401ccab561b97548da00d5e46a18934d4fdc562b49bd4e3bb5e5d3/68747470733a2f2f70726576696577732e31323372662e636f6d2f696d616765732f61726374696e612f61726374696e61313830382f61726374696e613138303830303239302f3130373133353234312d7765622d636c6f75642d636f6d707574696e672d7365727665722d686f7374696e672d64617461626173652d666c61742d766563746f722d69636f6e2d696c6c757374726174696f6e2d73696d706c652d626c61636b2d73796d626f6c2d6f6e2d7768692e6a7067" style="width:200px;height:200px;" class="avatar"   alt="projectImg">
                             </li>
+                            <li >
+                                <div class="column">
+                                    <strong>notion2confluence 🧲</strong>
+                                    <small><i>9-April-2022 to Still-Working</i></small>
+                                    <p>
+                                    An Application which can help you to transfer your page from Notion to Confluence (By Just Provide Some Details).
+                                    </p>    
+
+                                    <a href="https://github.com/Shashwatsingh22/notion2confluence" >Project Link 🔗</a>
+                                </div>
+
+                                <img src="https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/HomePage.PNG" style="width:200px;height:200px;" class="avatar"   alt="projectImg">
+                            </li>
+                            
 
                           </ul>
                         </div>`
